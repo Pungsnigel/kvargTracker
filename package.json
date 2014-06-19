@@ -1,0 +1,31 @@
+{
+  "name": "kvarg-tracker",
+  "description": "",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "racer": "git://github.com/BBWeb/racer.git#updated",
+    "tracks": "git://github.com/BBWeb/tracks.git#updated",
+    "derby": "git://github.com/codeparty/derby.git#39cfc2a12b41b7d82b6ffe50a2420f18e1406037",
+    "share": "git://github.com/share/ShareJS.git#2dd69ace45",
+    "express": "~3.2.5",
+    "redis": "~0.8.3",
+    "livedb-mongo": "~0.2.x",
+    "racer-browserchannel": "~0.1.0",
+    "connect-mongo": "~0.3.2",
+    "derby-ui-boot": "git://github.com/dadisn/derby-ui-boot.git#glyphicons-fix",
+    "moment": "*",
+    "racer-util": "*",
+    "lodash": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "private": true
+}
