@@ -1,4 +1,5 @@
-<import: src="./user">
+<import: src="./tracker">
+<import: src="./users">
 
 <!--
   Derby templates are similar to Handlebars, except that they are first
@@ -26,7 +27,8 @@
         <div class="nav-collapse">
           <ul class="nav">
             <!-- Other templates are included like HTML elements -->
-            <app:navLink title="Users" href="/">
+            <app:navLink title="Tracker" href="/">
+            <app:navLink title="Users" href="/users">
           </ul>
         </div>
       </div>
@@ -45,6 +47,6 @@
   </footer>
 
 <navLink:>
-  <li class="active">
+  <li class="{{#if equal($url, @href)}}active{{/}}">
     <a href="{{@href}}">{{@title}}</a>
   </li>
