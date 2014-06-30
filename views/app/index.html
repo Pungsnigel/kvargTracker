@@ -2,27 +2,22 @@
 <import: src="./users">
 
 <Header:>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
   <body class="{{dash($ns)}}">
-  <ui:connectionAlert>
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="brand" href="/">KVARG tracker</a>
-        <div class="nav-collapse">
-          <ul class="nav">
-            <!-- Other templates are included like HTML elements -->
-            <app:navLink title="Tracker" href="/">
-            <app:navLink title="Users" href="/users">
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="content">
+  <header>
     <div class="container">
-
-<Footer:>
+      <ui:connectionAlert>
+      <div class="logo">KVARG tracker</div>
+        <!-- Other templates are included like HTML elements -->
+      <ul>
+        <app:navLink title="Tracker" href="/">
+        <app:navLink title="Users" href="/users">
+      </ul>
     </div>
+  </header>
+  <div class="container">
+    
+<Footer:>
   </div>
   <footer>
     <div class="container">

@@ -1,12 +1,88 @@
 @import 'nib/vendor'
 @import './tracker'
 
-.container
-  padding: 0 10px
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700,300')
 
-.content
-  padding: 80px 0
+blue = #689EE5
+red = #FF362F
+
+html, body
+  margin 0
+  padding 0
+  font 1.1em/1.5 'Open Sans'
+
+header
+  margin-bottom 2em
+  padding 0 1em
+  background #222
+  color white
+
+  .logo
+    display inline-block
+
+  ul, li
+    display inline-block
+
+  li a
+    margin-left 1em
+    text-decoration none
+
+a
+  color red
+
+.btn
+  display inline-block
+  margin-left 0.3em
+  width 1.5em
+  background blue
+  color white
+  text-align center
+  border 1px solid darken(blue, 20%)
+  border-radius 0.3em
+  text-decoration none
+
+  &.red
+    background red
+    border 1px solid darken(red, 20%)
+
+.active a
+  color blue
+
+table
+  width 100%
+  border-collapse collapse
+
+  thead th
+    text-align left
+
+  tr
+    border-bottom 1px solid #ddd
+
+  td
+    padding 0.2em
+    &.right
+      text-align right
+
+.huge
+  font-size 2em
+  margin-bottom 0
+
+.container
+  position relative
+  margin 0 auto
+  max-width 30em
 
 footer
-  border-top: 1px solid #eee
-  padding: 19px 0
+  position absolute
+  bottom 0
+  width 100%
+  margin-top 3em
+
+@media (max-width: 30em)
+  html
+    color red
+
+  .huge
+    font-size 0.5em
+  
+
