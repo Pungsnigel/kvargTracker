@@ -22,7 +22,8 @@
     "derby-ui-boot": "git://github.com/dadisn/derby-ui-boot.git#glyphicons-fix",
     "moment": "*",
     "racer-util": "*",
-    "lodash": "*"
+    "lodash": "*",
+    "normalize.css": "~3.0.1"
   },
   "engines": {
     "node": "0.10.x"

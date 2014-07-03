@@ -1,4 +1,5 @@
 <Body:>
+<div class="container main">
   <table>
     <thead>
         <tr>
@@ -13,15 +14,16 @@
           <td class="{#if belowLimit(:user)}red{/}">{{:user.name}} </td>
           <td class="{#if belowLimit(:user)}red{/}">{:user.kvargCount}</td>
           <td class="right"> 
-            <a type="submit" x-bind="click: user.inc" class="btn"> + </a> 
-            <a type="submit" x-bind="click: user.dec" class="btn red"> - </a>
+            <a type="submit" x-bind="click: user.inc" class="btn square"> + </a> 
+            <a type="submit" x-bind="click: user.dec" class="btn square red"> - </a>
           </td>
         </tr>
       {/}
     </tbody>
   </table>
 
-<div class="loner">
-  <p class="huge"> Total KVARG in storage: {_page.totalKvarg} </p>
-  <p> Total PROTEIN in storage: {multiply(_page.totalKvarg, 60)}g </p>
+  <div class="loner">
+    <p class="huge"> Total KVARG in storage: {_page.totalKvarg} </p>
+    <p> Total PROTEIN in storage: {multiply(_page.totalKvarg, 60)}g </p>
+  </div>
 </div>
